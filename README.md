@@ -1,5 +1,5 @@
-JavaFX Hello World Demo
-=======================
+JavaFX Button Click Demo
+========================
 
-Show a window with `Hello, JavaFX` label.
+Show a Button and when clicking on it, it do something
 
