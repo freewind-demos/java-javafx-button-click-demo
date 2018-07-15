@@ -1,8 +1,6 @@
 package demo;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
@@ -17,11 +15,7 @@ public class Hello extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello");
         Button button = new Button("Hello, JavaFX!");
-        button.setOnAction(new EventHandler<ActionEvent>() {
-            public void handle(ActionEvent event) {
-                System.out.println("Clicked!");
-            }
-        });
+        button.setOnAction(event -> System.out.println("Clicked!"));
         StackPane root = new StackPane();
         root.getChildren().add(button);
         primaryStage.setScene(new Scene(root, 300, 250));
